@@ -50,8 +50,8 @@ const Home = () => {
 
             {/* Dynamic data cards */}
             <section>
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 container mx-auto p-4 ">
-                    <h1 className="font-bold text-xl">Your Friends</h1>
+                    <h1 className="font-bold text-xl pb-10">Your Friends</h1>
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 p-4 ">
                     {
                         friends.map((friend) => <FriendCard
                             key={friend.id}
