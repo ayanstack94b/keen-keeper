@@ -7,6 +7,13 @@ import Timeline from "../Pages/Timeline";
 import Stats from "../Pages/Stats";
 import ErrorPage from "../Pages/ErrorPage";
 
+const friendsPromise = async () => {
+    const res = await fetch('/friends.json')
+    const data = await res.json();
+    return data
+}
+
+
 export  const router = createBrowserRouter([
     {
         path: "/",
@@ -14,11 +21,13 @@ export  const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                Component: Home
+                Component: Home,
+                loader: friendsPromise
             },
             {
                 path: '/friendDetails',
-                Component: FriendDetails
+                Component: FriendDetails,
+                
             },
             {
                 path: '/timeline',

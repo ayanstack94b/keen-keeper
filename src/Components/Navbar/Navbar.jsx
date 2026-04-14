@@ -9,19 +9,19 @@ const Navbar = () => {
 
     const links = <>
         <NavLink to="/" className={({ isActive }) =>
-            `btn ${isActive ? 'bg-[#1a8862] text-white' : ''}`
+            `btn ${isActive ? 'bg-primary text-white' : ''}`
         }>
             <RiHome4Line /> Home
         </NavLink>
 
         <NavLink to="/timeline" className={({ isActive }) =>
-            `btn ${isActive ? 'bg-[#1a8862] text-white' : ''}`
+            `btn ${isActive ? 'bg-primary text-white' : ''}`
         }>
             <FaRegClock /> Timeline
         </NavLink>
 
         <NavLink to="/stats" className={({ isActive }) =>
-            `btn ${isActive ? 'bg-[#1a8862] text-white' : ''}`
+            `btn ${isActive ? 'bg-primary text-white' : ''}`
         }>
             <IoIosStats /> Stats
         </NavLink>

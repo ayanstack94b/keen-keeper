@@ -9,7 +9,7 @@ const Footer = () => {
         //         <h1 className="font-bold text-6xl">
         //             KeenKeeper
         //         </h1>
-        //             <p className=""> Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+        //         <p className=""> Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
 
         //     </aside>
 
@@ -51,11 +51,11 @@ const Footer = () => {
         //         </div>
         //     </nav>
 
-        //     <hr  />
+        //     <hr />
 
-        //    <div className="">
+        //     <div className="">
         //         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-        //    </div>
+        //     </div>
 
         // </footer>
     );
