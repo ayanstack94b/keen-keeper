@@ -9,19 +9,19 @@ const Navbar = () => {
 
     const links = <>
         <NavLink to="/" className={({ isActive }) =>
-            `btn ${isActive ? 'bg-green-500 text-white' : ''}`
+            `btn ${isActive ? 'bg-[#1a8862] text-white' : ''}`
         }>
             <RiHome4Line /> Home
         </NavLink>
 
         <NavLink to="/timeline" className={({ isActive }) =>
-            `btn ${isActive ? 'bg-green-500 text-white' : ''}`
+            `btn ${isActive ? 'bg-[#1a8862] text-white' : ''}`
         }>
             <FaRegClock /> Timeline
         </NavLink>
 
         <NavLink to="/stats" className={({ isActive }) =>
-            `btn ${isActive ? 'bg-green-500 text-white' : ''}`
+            `btn ${isActive ? 'bg-[#1a8862] text-white' : ''}`
         }>
             <IoIosStats /> Stats
         </NavLink>
@@ -29,7 +29,7 @@ const Navbar = () => {
 
     return (
         <div className="min-w-full bg-base-100 shadow-sm ">
-            <div className="navbar bg-base-100 shadow-sm">
+            <div className="navbar container mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown ">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -37,9 +37,10 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex="-1"
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2">
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2 ">
                             {links}
                         </ul>
+                        <NavLink to={'/'}> <h4 className="inline text-2xl font-bold  "><span className="">Keen</span><span className="text-gray-700">Keeper</span></h4></NavLink>
                     </div>
                 </div>
 
