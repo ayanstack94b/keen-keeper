@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Rohit Sen",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "rohit.sen@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We met during college fests. Still talk about music and life.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Ananya Das",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "ananya.das@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["work", "design"],
+    "bio": "Worked together on a freelance UI project. Very sharp mind.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 3,
+    "name": "Arjun Mukherjee",
+    "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+    "email": "arjun.m@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym", "local"],
+    "bio": "Gym partner. We push each other to stay consistent.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Roy",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "sneha.roy@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["school", "old friend"],
+    "bio": "School friend. Lost touch sometimes but always reconnect.",
+    "goal": 15,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 5,
+    "name": "Karan Mehta",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "karan.mehta@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["startup", "tech"],
+    "bio": "Met at a hackathon. We exchange startup ideas often.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 6,
+    "name": "Priya Nair",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "priya.nair@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["music", "creative"],
+    "bio": "Connected through music. She is into indie vocals.",
+    "goal": 7,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 7,
+    "name": "Sourav Ghosh",
+    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "email": "sourav.ghosh@gmail.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["neighbor", "football"],
+    "bio": "Childhood neighbor. We used to play football daily.",
+    "goal": 20,
+    "next_due_date": "2026-03-30"
+  },
+  {
+    "id": 8,
+    "name": "Neha Kapoor",
+    "picture": "https://randomuser.me/api/portraits/women/25.jpg",
+    "email": "neha.kapoor@gmail.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["content", "instagram"],
+    "bio": "Met through content creation. Shares useful ideas.",
+    "goal": 12,
+    "next_due_date": "2026-04-19"
+  }
+]
