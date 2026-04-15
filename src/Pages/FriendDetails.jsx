@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BiSolidArchive } from 'react-icons/bi';
 import { IoVideocamSharp } from 'react-icons/io5';
 import { LuMessageSquareMore } from 'react-icons/lu';
@@ -6,11 +6,13 @@ import { MdDeleteOutline } from 'react-icons/md';
 import { RiNotificationSnoozeFill } from 'react-icons/ri';
 import { TbPhoneCall } from 'react-icons/tb';
 import { useLoaderData } from 'react-router';
+import { TimelineContext } from '../Context/TimelineContext';
 
 
 const FriendDetails = () => {
     const friend = useLoaderData();
-    console.log(friend);
+    const { interactions, addInteraction } = useContext(TimelineContext)
+    console.log( interactions);
 
     const statusStyles = {
         "on-track": "bg-green-500 text-white",
@@ -19,12 +21,13 @@ const FriendDetails = () => {
     };
 
     const {
-        id,
         bio,
         email,
         name,
-        picture,
+        goal,
         days_since_contact: daysSinceContact,
+        next_due_date: nextDueDate,
+        picture,
         status,
         tags,
     } = friend;
@@ -82,18 +85,18 @@ const FriendDetails = () => {
                     <div className="flex lg:flex-row md:flex-row flex-col justify-center w-full items-center gap-4 ">
                         {/* dynamic card 1 */}
                         <div className="bg-white w-full shadow-sm p-5 text-center cursor-pointer hover:shadow-lg transition">
-                            <h1 className="font-bold text-2xl green">62</h1>
+                            <h1 className="font-bold text-2xl green">{daysSinceContact}</h1>
                             <p className="text-gray-600 overflow-clip">Days since Contact</p>
                         </div>
                         {/* dynamic card 2 */}
                         <div className="bg-white w-full shadow-sm p-5 text-center cursor-pointer hover:shadow-lg transition">
-                            <h1 className="font-bold text-2xl green">62</h1>
-                            <p className="text-gray-600 overflow-clip">Days since Contact</p>
+                            <h1 className="font-bold text-2xl green">{goal}</h1>
+                            <p className="text-gray-600 overflow-clip">Goal (Days)</p>
                         </div>
                         {/* dynamic card 3 */}
                         <div className="bg-white w-full shadow-sm p-5 text-center cursor-pointer hover:shadow-lg transition">
-                            <h1 className="font-bold text-2xl green">62</h1>
-                            <p className="text-gray-600 overflow-clip">Days since Contact</p>
+                            <h1 className="font-bold text-2xl green">{nextDueDate}</h1>
+                            <p className="text-gray-600 overflow-clip">Next Due</p>
                         </div>
                     </div>
 
@@ -101,7 +104,7 @@ const FriendDetails = () => {
                     <div className="flex justify-between items-center bg-white p-6 shadow-sm cursor-pointer hover:shadow-lg transition">
                         <div className="space-y-6">
                             <h2 className="text-gray-600 font-bold text-lg md:text-2xl lg:text-3xl">RelationShip Goals</h2>
-                            <p className="text-gray-600 lg:text-xl md:text-lg text-xs">Connect every 30 days</p>
+                            <p className="text-gray-600 lg:text-xl md:text-lg text-xs">Connect every {daysSinceContact} days</p>
                         </div>
                         <button className="btn">Edit</button>
                     </div>
@@ -115,17 +118,17 @@ const FriendDetails = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-5 p-3 ">
                             {/* call card */}
-                            <div className="text-center flex flex-col items-center justify-center h-20 bg-base-200 shadow-sm cursor-pointer hover:shadow-lg transition">
+                            <div onClick={() => addInteraction("call", name)} className="text-center flex flex-col items-center justify-center h-20 bg-base-200 shadow-sm cursor-pointer hover:shadow-lg transition">
                                 <TbPhoneCall />
                                 <p className="font-semibold">Call</p>
                             </div>
                             {/* Text card */}
-                            <div className="text-center flex flex-col items-center justify-center h-20 bg-base-200 shadow-sm cursor-pointer hover:shadow-lg transition">
+                            <div onClick={() => addInteraction("text", name)} className="text-center flex flex-col items-center justify-center h-20 bg-base-200 shadow-sm cursor-pointer hover:shadow-lg transition">
                                 <LuMessageSquareMore />
                                 <p className="font-semibold">Call</p>
                             </div>
                             {/* Video card */}
-                            <div className="text-center flex flex-col items-center justify-center h-20 bg-base-200 shadow-sm cursor-pointer hover:shadow-lg transition">
+                            <div onClick={() => addInteraction("video", name)} className="text-center flex flex-col items-center justify-center h-20 bg-base-200 shadow-sm cursor-pointer hover:shadow-lg transition">
                                 <IoVideocamSharp />
                                 <p className="font-semibold">Call</p>
                             </div>

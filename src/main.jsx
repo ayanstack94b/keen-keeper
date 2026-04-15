@@ -3,9 +3,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { RouterProvider } from "react-router/dom";
 import { router } from './routes/Router';
+import TimelineProvider from './Context/TimelineContext';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />,
+    <TimelineProvider>
+      <RouterProvider router={router} />,
+    </TimelineProvider>
   </StrictMode>,
 )
