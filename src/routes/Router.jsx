@@ -14,7 +14,7 @@ const friendsPromise = async () => {
 }
 
 
-export  const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         path: "/",
         Component: MainLayout,
@@ -39,7 +39,7 @@ export  const router = createBrowserRouter([
                 }
             },
             {
-                path: '/timeline',
+                path: 'timeline',
                 Component: Timeline
             },
             {
