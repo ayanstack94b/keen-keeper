@@ -1,4 +1,6 @@
 import React, { createContext, useState } from 'react';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const TimelineContext = createContext();
 
@@ -12,9 +14,12 @@ const TimelineProvider = ({ children }) => {
             name,
             date: new Date().toLocaleDateString()
         };
-        console.log("New Interaction:", newItem);
 
         setInteractions(prev => [...prev, newItem]);
+
+        const formattedType = type.charAt(0).toUpperCase() + type.slice(1);
+
+        toast.success(`${formattedType} with ${name} added`);
     };
 
     return (

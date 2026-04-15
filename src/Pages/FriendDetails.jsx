@@ -125,12 +125,12 @@ const FriendDetails = () => {
                             {/* Text card */}
                             <div onClick={() => addInteraction("text", name)} className="text-center flex flex-col items-center justify-center h-20 bg-base-200 shadow-sm cursor-pointer hover:shadow-lg transition">
                                 <LuMessageSquareMore />
-                                <p className="font-semibold">Call</p>
+                                <p className="font-semibold">Text</p>
                             </div>
                             {/* Video card */}
                             <div onClick={() => addInteraction("video", name)} className="text-center flex flex-col items-center justify-center h-20 bg-base-200 shadow-sm cursor-pointer hover:shadow-lg transition">
                                 <IoVideocamSharp />
-                                <p className="font-semibold">Call</p>
+                                <p className="font-semibold">Video</p>
                             </div>
                         </div>
 
