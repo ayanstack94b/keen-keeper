@@ -1,14 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import FriendCard from '../Components/FriendCard/FriendCard';
 import { GoPlus } from 'react-icons/go';
 
 
+
 const Home = () => {
+
     const friends = useLoaderData()
-    // console.log('friends data:', friends);
+
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 800);
+    }, []);
+
+    if (loading) {
+        return (
+            <div className="min-h-screen flex items-center justify-center">
+                <span className="loading loading-spinner loading-xl text-green-600"></span>
+                <p className="text-gray-500 text-sm">Loading friends...</p>
+            </div>
+        );
+    }
+
     return (
-        <div className=''>
+        <div>
             {/* home static section */}
             <section className='text-center space-y-8 my-10'>
                 <h1 className="text-xl md:text-3xl lg:text-5xl font-bold">Friends to keep close in your life</h1>

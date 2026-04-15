@@ -4,16 +4,19 @@ import { MdArrowDropDown } from 'react-icons/md';
 import { TbPhoneCall } from 'react-icons/tb';
 import { LuMessageSquareMore } from 'react-icons/lu';
 import { IoVideocamSharp } from 'react-icons/io5';
+import EmptyUi from './EmptyUi';
 
 const Timeline = () => {
     const { interactions } = useContext(TimelineContext)
     console.log(interactions);
-
     const iconMap = {
         call: <TbPhoneCall className='text-green-600 bg-green-100 rounded-full p-3 shadow-md' size={55}/>,
         text: <LuMessageSquareMore className="text-blue-600 bg-blue-100 rounded-full p-3 shadow-md" size={55} />,
         video: <IoVideocamSharp className="text-purple-600 bg-purple-100 rounded-full p-3 shadow-md" size={55} />
     };
+    if (interactions.length === 0) {
+        return <EmptyUi />;
+    }
 
     return (
         <div className='min-h-screen my-10 p-5'>

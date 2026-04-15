@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
                 loader: friendsPromise
             },
             {
-                path: '/friendDetails/:id',
+                path: 'friendDetails/:id',
                 Component: FriendDetails,
                 loader: async ({ params }) => {
                     const res = await fetch('/friends.json');
@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
                 Component: Timeline
             },
             {
-                path: '/stats',
+                path: 'stats',
                 Component: Stats
             },
         ],
