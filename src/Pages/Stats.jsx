@@ -32,10 +32,10 @@ const Stats = () => {
         return (
             <div className="min-h-[60vh] flex items-center justify-center text-gray-500">
                 <h2 className="">Oopps!! no interaction data yet </h2>
-               <span className="">
+                <span className="">
 
-                <TbMoodEmptyFilled size={30} className='text-green-800'/>
-               </span>
+                    <TbMoodEmptyFilled size={30} className='text-green-800' />
+                </span>
 
 
             </div>
@@ -43,7 +43,7 @@ const Stats = () => {
     }
 
     return (
-        <div className="min-h-[60vh] flex flex-col items-center justify-center my-10 bg-white rounded pb-5 mx-5">
+        <div className="min-h-[60vh] flex flex-col items-center justify-center my-10 bg-white rounded pb-5 mx-5 shadow-sm">
             <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold my-6 text-start">Friendship Analytics</h2>
 
             <PieChart width={400} height={400}>
