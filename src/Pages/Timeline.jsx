@@ -9,7 +9,7 @@ import EmptyUi from './EmptyUi';
 const Timeline = () => {
     const { interactions } = useContext(TimelineContext)
     const [filter, setFilter] = useState("all");
-    console.log(interactions);
+
     const iconMap = {
         call: <TbPhoneCall className='text-green-600 bg-green-100 rounded-full p-3 shadow-md' size={55} />,
         text: <LuMessageSquareMore className="text-blue-600 bg-blue-100 rounded-full p-3 shadow-md" size={55} />,

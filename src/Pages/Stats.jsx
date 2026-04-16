@@ -43,8 +43,8 @@ const Stats = () => {
     }
 
     return (
-        <div className="min-h-[60vh] flex flex-col items-center justify-center my-10">
-            <h2 className="text-4xl font-bold mb-6">Friendship Analytics</h2>
+        <div className="min-h-[60vh] flex flex-col items-center justify-center my-10 bg-white rounded pb-5 mx-5">
+            <h2 className=" text-2xl md:text-4xl lg:text-5xl font-bold my-6 text-start">Friendship Analytics</h2>
 
             <PieChart width={400} height={400}>
                 <Pie

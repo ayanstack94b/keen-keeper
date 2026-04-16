@@ -15,7 +15,6 @@ const MainLayout = () => {
             </nav>
 
             <main className=' container mx-auto'>
-
                 <Outlet></Outlet>
             </main>
             <ToastContainer position="top-right" autoClose={2000} />
@@ -23,9 +22,6 @@ const MainLayout = () => {
             <footer>
                 <Footer></Footer>
             </footer>
-
-
-
         </div>
     );
 };

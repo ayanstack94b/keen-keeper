@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 
 const FriendCard = ({ friend }) => {
 
-    // console.log('from friend card', friend);
     const statusStyles = {
         "on-track": "bg-green-500 text-white",
         "almost due": "bg-yellow-400 text-black",
