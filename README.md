@@ -19,6 +19,7 @@ Not too complex, just something useful and clean.
 * React Router
 * Tailwind CSS + DaisyUI
 * Context API
+* React Toastify
 * React Icons pakage
 * Recharts
 
