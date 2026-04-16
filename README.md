@@ -55,13 +55,6 @@ Not too complex, just something useful and clean.
 
 ---
 
-## 🔗 Links
-
-Live link: (add your deployed link)
-GitHub repo: (add your repo link)
-
----
-
 ## 📌 Final note
 
 This project helped me understand routing, context api and handling state better.
