@@ -33,25 +33,15 @@ Not too complex, just something useful and clean.
   You can add call, text, video and it gets saved in timeline automatically
 
 *  Stats page
-  Shows a simple pie chart of your interactions (this was new for me, used recharts here)
+  Shows a simple pie chart of your interactions 
 
 ---
 
 ##  Extra things I tried
 
 * Toast notifications when adding interactions
-* Responsive design (worked on mobile and desktop both)
+* Responsive design for mobile and desktop both
 * Simple filtering in timeline
-
----
-
-##  How to run
-
-1. Clone the repo
-2. Install dependencies
-   npm install
-3. Run project
-   npm run dev
 
 ---
 
