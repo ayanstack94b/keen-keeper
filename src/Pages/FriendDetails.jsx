@@ -12,7 +12,7 @@ import { TimelineContext } from '../Context/TimelineContext';
 const FriendDetails = () => {
     const friend = useLoaderData();
     const { interactions, addInteraction } = useContext(TimelineContext)
-    console.log( interactions);
+    console.log(interactions);
 
     const statusStyles = {
         "on-track": "bg-green-500 text-white",
@@ -33,7 +33,7 @@ const FriendDetails = () => {
     } = friend;
 
     return (
-        <div className='min-h-screen mt-10'>
+        <div className='mt-10'>
             {/* main div */}
             <section className="flex lg:flex-row md:flex-col flex-col justify-center gap-5 p-6 space-y-3">
 
