@@ -1,16 +1,70 @@
-# React + Vite
+# KeenKeeper 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## About this project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is a small web app I made to track friendships and stay connected with people.
+Sometimes we forget to check on friends, so this app helps to keep that in track.
 
-## React Compiler
+You can see your friends, check when you last talked, and log simple interactions like call, text or video.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Not too complex, just something useful and clean.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech that used
+
+* React
+* React Router
+* Tailwind CSS + DaisyUI
+* Context API
+* React Icons pakage
+* Recharts
+
+---
+
+##  Features
+
+*  Friend list with details page
+  You can open each friend and see their info like last contact, tags, etc.
+
+*  Interaction tracking
+  You can add call, text, video and it gets saved in timeline automatically
+
+*  Stats page
+  Shows a simple pie chart of your interactions (this was new for me, used recharts here)
+
+---
+
+##  Extra things I tried
+
+* Toast notifications when adding interactions
+* Responsive design (worked on mobile and desktop both)
+* Simple filtering in timeline
+
+---
+
+##  How to run
+
+1. Clone the repo
+2. Install dependencies
+   npm install
+3. Run project
+   npm run dev
+
+---
+
+## 🔗 Links
+
+Live link: (add your deployed link)
+GitHub repo: (add your repo link)
+
+---
+
+## 📌 Final note
+
+This project helped me understand routing, context api and handling state better.
+Also first time using charts, so that part was interesting.
+
+Still not perfect but learned a lot from building it 

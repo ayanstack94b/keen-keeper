@@ -54,7 +54,7 @@ const Stats = () => {
                     cx="50%"
                     cy="50%"
                     outerRadius={120}
-                    label
+                    label={({ percent }) => `${(percent * 100).toFixed(0)}%`}
                 >
                     {data.map((entry, index) => (
                         <Cell key={index} fill={colors[index % colors.length]} />
