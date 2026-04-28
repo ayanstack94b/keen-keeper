@@ -1,54 +1,80 @@
-# KeenKeeper 
+# 🧠 KeenKeeper
 
 ---
 
-## About this project
+## 🚀 Live Demo
 
-This is a small web app I made to track friendships and stay connected with people.
-Sometimes we forget to check on friends, so this app helps to keep that in track.
+* 🌐 Live Site: https://keen-keeper-by-ayonstack.netlify.app/
+* 📂 Repository: https://github.com/ayanstack94b/keen-keeper
 
-You can see your friends, check when you last talked, and log simple interactions like call, text or video.
-
-Not too complex, just something useful and clean.
 
 ---
 
-## Tech that used
+## 📖 About This Project
+
+KeenKeeper is a web app designed to help users track friendships and stay connected.
+
+It allows you to monitor interactions with friends, such as calls, texts, or video chats, and keeps a simple timeline of communication history.
+
+The goal was to build something useful and clean without overcomplicating the experience.
+
+---
+
+## ⚙️ Tech Stack
 
 * React
 * React Router
 * Tailwind CSS + DaisyUI
 * Context API
 * React Toastify
-* React Icons pakage
+* React Icons
 * Recharts
 
 ---
 
-##  Features
+## ✨ Features
 
-*  Friend list with details page
-  You can open each friend and see their info like last contact, tags, etc.
+### 👥 Friend Management
 
-*  Interaction tracking
-  You can add call, text, video and it gets saved in timeline automatically
-
-*  Stats page
-  Shows a simple pie chart of your interactions 
+* View list of friends
+* Open individual friend profiles
+* See details like last interaction and tags
 
 ---
 
-##  Extra things I tried
+### 🔄 Interaction Tracking
 
-* Toast notifications when adding interactions
-* Responsive design for mobile and desktop both
-* Simple filtering in timeline
+* Log interactions (call, text, video)
+* Automatically updates timeline
 
 ---
 
-## 📌 Final note
+### 📊 Stats & Insights
 
-This project helped me understand routing, context api and handling state better.
-Also first time using charts, so that part was interesting.
+* Visual representation of interactions using charts
+* Simple and clear data overview
 
-Still not perfect but learned a lot from building it 
+---
+
+### 🔔 UI & Experience
+
+* Toast notifications for actions
+* Responsive design (mobile + desktop)
+* Basic filtering in interaction timeline
+
+---
+
+## 🧪 What I Learned
+
+* Better understanding of React routing
+* Managing global state using Context API
+* Handling user interactions and updates
+* Working with chart libraries (Recharts)
+
+---
+
+## 📌 Final Note
+
+This project was built as part of my learning process.
+It’s not perfect, but it helped me improve how I structure components and manage state in a real project.
+
